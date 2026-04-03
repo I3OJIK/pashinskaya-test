@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install -j$(nproc) \
     bcmath \
     pdo \
-    pdo_pgsql \
+    pdo_mysql \
     gd \
     opcache \
     intl \
