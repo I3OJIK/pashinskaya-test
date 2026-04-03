@@ -17,7 +17,6 @@ class TaskFilterData extends Data
         public ?TaskStatus $status = null,
 
         #[Min(20), Max(100)]
-        public ?int $perPage = 20,
+        public ?int $per_page = 20,
     ) {}
-    
 }
