@@ -11,12 +11,12 @@ class StatusFilter
      * Фильтрация по статусу задачи
      * 
      * @param Builder $query
-     * @param TaskStatus $status
+     * @param string $status
      * 
      * @return Builder
      */
-    public function apply(Builder $query, TaskStatus $status): Builder
+    public function apply(Builder $query, string $status): Builder
     {
-        return $query->where('status', $status->value);
+        return $query->where('status', $status);
     }
 }

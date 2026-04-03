@@ -16,6 +16,6 @@ class SearchFilter
      */
     public function apply(Builder $query, string $searchTerm): Builder
     {
-        return $query->where('name', 'LIKE', "%{$searchTerm}%");
+        return $query->where('title', 'LIKE', "%{$searchTerm}%");
     }
 }

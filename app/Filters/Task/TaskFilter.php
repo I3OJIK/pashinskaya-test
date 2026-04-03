@@ -2,7 +2,7 @@
 
 namespace App\Filters\Task;
 
-use App\Filters\Task\Abstracts\BaseFilter;
+use App\Filters\Task\Abstract\BaseFilter;
 use App\Filters\Task\Filters\SearchFilter;
 use App\Filters\Task\Filters\StatusFilter;
 

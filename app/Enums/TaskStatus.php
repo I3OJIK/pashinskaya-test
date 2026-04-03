@@ -15,10 +15,19 @@ enum TaskStatus: string
      */
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::NEW => 'Новая',
             self::IN_PROGRESS => 'В работе',
             self::DONE => 'Выполнена',
         };
+    }
+
+    public static function forSelect(): array
+    {
+        return [
+            'new' => 'Новая',
+            'in_progress' => 'В работе',
+            'done' => 'Выполнена',
+        ];
     }
 }

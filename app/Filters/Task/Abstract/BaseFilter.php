@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filters\Task\Abstracts;
+namespace App\Filters\Task\Abstract;
 
 use Illuminate\Database\Eloquent\Builder;
 
