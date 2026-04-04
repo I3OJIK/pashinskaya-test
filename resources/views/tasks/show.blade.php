@@ -67,7 +67,7 @@
             @method('DELETE')
             <button type="submit" 
                     class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
-                    onclick="return confirm('Вы уверены, что хотите удалить задачу "{{ $task->title }}"?')">
+                    onclick="return confirm('Удалить задачу?')">
                 Удалить
             </button>
         </form>
